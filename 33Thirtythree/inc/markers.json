@@ -1,0 +1,89 @@
+{
+	"mainMarker": {
+		"location": "29.7355643, -95.4407477",
+		"icon": "images/marker01.png",
+		"url": "https://www.google.com/maps/place/3333+Weslayan+St,+Houston,+TX+77027,+USA/@29.7355643,-95.4407477,17z/data=!4m2!3m1!1s0x8640c11cb45e277d:0xbae5842dfa9aaa20"
+	},
+	"markers": [
+		{
+			"location": "29.73628, -95.447702",
+			"icon": "images/marker02.svg",
+			"title": "Coffeeshop Name",
+			"linkText": "get directions",
+			"url": "https://www.google.com/maps/place/3206+Suffolk+Dr,+Houston,+TX+77027,+%D0%A1%D0%A8%D0%90/@29.73628,-95.447702,17z/data=!3m1!4b1!4m2!3m1!1s0x8640c1103fc5e69f:0xf11e4a5226c64715",
+			"category": "sip"
+		},
+		{
+			"location": "29.7415587, -95.4568377",
+			"icon": "images/marker02.svg",
+			"title": "Coffeeshop Name",
+			"linkText": "get directions",
+			"url": "https://www.google.com/maps/place/2525+W+Loop+Fwy,+Houston,+TX+77027,+%D0%A1%D0%A8%D0%90/@29.7415587,-95.4568377,17z/data=!3m1!4b1!4m2!3m1!1s0x8640c16b4d396c6b:0xe957bc7c97f51155",
+			"category": "sip"
+		},
+		{
+			"location": "29.736928, -95.433221",
+			"icon": "images/marker06.svg",
+			"title": "Coffeeshop Name",
+			"linkText": "get directions",
+			"url": "https://www.google.com/maps/place/ALLRECORDS/@29.736928,-95.433221,17z/data=!3m1!4b1!4m2!3m1!1s0x8640c0bc8e2ca2bf:0x796e7520c0be7935",
+			"category": "nosh"
+		},
+		{
+			"location": "29.7344818, -95.4399338",
+			"icon": "images/marker06.svg",
+			"title": "Coffeeshop Name",
+			"linkText": "get directions",
+			"url": "https://www.google.com/maps/place/3830+Richmond+Ave,+Houston,+TX+77027,+%D0%A1%D0%A8%D0%90/@29.7344818,-95.4399338,17z/data=!3m1!4b1!4m2!3m1!1s0x8640c1035cc9b6f7:0x4e9626b16f62f0e4",
+			"category": "nosh"
+		},
+		{
+			"location": "29.7288715, -95.4555875",
+			"icon": "images/marker05.svg",
+			"title": "Coffeeshop Name",
+			"linkText": "get directions",
+			"url": "https://www.google.com/maps/place/4669+Southwest+Fwy,+Houston,+TX+77027,+%D0%A1%D0%A8%D0%90/@29.7288715,-95.4555875,17z/data=!3m1!4b1!4m2!3m1!1s0x8640c10ca4f14317:0x7cfc93f21a217506",
+			"category": "play"
+		},
+		{
+			"location": "29.729669, -95.4236942",
+			"icon": "images/marker05.svg",
+			"title": "Coffeeshop Name",
+			"linkText": "get directions",
+			"url": "https://www.google.com/maps/place/2925+Southwest+Fwy,+Houston,+TX+77098,+%D0%A1%D0%A8%D0%90/@29.729669,-95.4236942,17z/data=!3m1!4b1!4m2!3m1!1s0x8640c0f730c60cdd:0x7f7dbaa8dc65139f",
+			"category": "play"
+		},
+		{
+			"location": "29.7227156, -95.4421161",
+			"icon": "images/marker04.svg",
+			"title": "Coffeeshop Name",
+			"linkText": "get directions",
+			"url": "https://www.google.com/maps/place/5534+Weslayan+St,+Weslayan+Plaza,+Houston,+TX+77005,+%D0%A1%D0%A8%D0%90/@29.7227156,-95.4421161,17z/data=!3m1!4b1!4m2!3m1!1s0x8640c1a9e92587a1:0xf193e9a3a08a0508",
+			"category": "shop"
+		},
+		{
+			"location": "29.742674, -95.428915",
+			"icon": "images/marker04.svg",
+			"title": "Coffeeshop Name",
+			"linkText": "get directions",
+			"url": "https://www.google.com/maps/place/3378+Westheimer+Rd,+Houston,+TX+77098,+%D0%A1%D0%A8%D0%90/@29.742674,-95.428915,17z/data=!3m1!4b1!4m2!3m1!1s0x8640c0e693eb7e8b:0xf69fadd5fafdf3cf",
+			"category": "shop"
+		},
+		{
+			"location": "29.7269778, -95.4509163",
+			"icon": "images/marker03.svg",
+			"title": "Coffeeshop Name",
+			"linkText": "get directions",
+			"url": "https://www.google.com/maps/place/4561+Westpark+Dr,+Houston,+TX+77027,+%D0%A1%D0%A8%D0%90/@29.7269778,-95.4509163,17z/data=!3m1!4b1!4m2!3m1!1s0x8640c1091afcf8f9:0x3310cf7daaea1ea1",
+			"category": "walk"
+		},
+		{
+			"location": "29.7353973, -95.464418",
+			"icon": "images/marker03.svg",
+			"title": "Coffeeshop Name",
+			"linkText": "get directions",
+			"url": "https://www.google.com/maps/place/5127+Hidalgo+St,+Houston,+TX+77056,+%D0%A1%D0%A8%D0%90/@29.7353973,-95.464418,17z/data=!3m1!4b1!4m2!3m1!1s0x8640c16e36ae504d:0x595a8e95356cba8d",
+			"category": "walk"
+		}
+	]
+}

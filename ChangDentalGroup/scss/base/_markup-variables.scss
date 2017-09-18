@@ -1,0 +1,51 @@
+// brand colors (http://name-of-color.com/)
+$black: #000;
+$white: #fff;
+$mountain-mist: #999;
+$ironside-gray: #666;
+$cararra: #ede9e9;
+$hint-of-red: #faf8f8;
+$bon-jour: #e3dfdf;
+$bon-jour-2: #e0dee2;
+$silver: #c0c0c1;
+$waikawa-gray: #669;
+$celeste: #ccc;
+$gallery: #edecef;
+$geyser: #dbdbe6;
+$gull-gray: #a2a1c0;
+$light-gray: #d3d0d6;
+$mystic: #e5e5ec;
+$black-haze: #f7f6f6;
+$nobel: #b4b4b4;
+$blue-violet: #5c51ad;
+$platinum: #e6e2e2;
+$ebb: #e7e3e3;
+$ebb-2: #e9e6e6;
+$gainsboro: #ddd;
+$seashell: #f1f1f1;
+$violet: #240a40;
+
+
+$ironside-gray-background: rgba(102,102,102,.4);
+$cararra-background: rgba(237,233,233,.2);
+$waikawa-gray-background: rgba(102,102,153,.46);
+
+// base variables
+$base-text-color: $mountain-mist;
+$base-background-color: $white;
+$base-link-color: $ironside-gray;
+$base-form-text-color: $mountain-mist;
+$base-form-placeholder-color: $mountain-mist;
+$base-input-border-color: $mountain-mist;
+
+$base-font-size: 14px;
+$base-line-height: 30px;
+$base-font-family: 'Arial', 'Helvetica', sans-serif;
+$base-text-interval: ($base-font-size * $base-line-height);
+$fontello: "fontello";
+$nunito: 'Nunito', Arial, sans-serif;
+
+$base-min-width: 320px;
+
+// @font-face-serif: 
+// @font-face-sans-serif: 

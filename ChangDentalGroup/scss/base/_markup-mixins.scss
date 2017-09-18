@@ -1,0 +1,249 @@
+// breakpoints
+$mobile: 767px;  // mobile 767px and less 
+$tablet: 1025px; // tablet 1025px {desctop - 1} and less 
+$retina: 1.5;    // standart retina > 1.5x
+$retina-hd: 2.5; // hd retina > 2.5x
+
+// breakpoints mixin
+@mixin breakpoint($rule){
+  @if ($rule == $retina or $rule == $retina-hd){
+    @media only screen and ( min-resolution : #{$retina*96} ), ( -webkit-min-device-pixel-ratio : #{$retina} ){
+     @content;
+    }
+  }
+  @else{
+    @media only screen and (max-width: #{$rule}){
+     @content;
+    }  
+  }
+}
+
+@mixin breakpoint-min($width){
+  @media only screen and (min-width: ($width)){
+   @content;
+  }
+}
+
+/// breakpoints mixin usage
+/// selector{
+///   height:100px;
+///   @include breakpoint($tablet){
+///     height:50px;
+///   }
+/// }
+
+
+// clearfix
+%clearfix {
+  &:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
+
+// reset for list
+%listreset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+// hide text
+@mixin hide-text {
+  overflow: hidden;
+  text-indent: -9999px;
+}
+
+// border-radius
+@mixin border-radius($type: border-radius) {
+	-webkit-border-radius: $type;
+	-moz-border-radius: $type;
+	border-radius: $type;
+}
+
+// inline-method
+@mixin inline-method {
+	letter-spacing:-6px;
+}
+
+// inline block
+// sample: @include inline-block(top);
+@mixin inline-block($alignment) {
+	display: inline-block;
+	vertical-align: $alignment;
+	letter-spacing:0;
+}
+
+@mixin border ($width: 1px, $color: $base-border-color) {
+	border: $width solid $color;
+}
+
+// reset for after and before
+@mixin element-reset($top, $right, $bottom, $left){
+	position: absolute;
+	top:$top;
+	bottom:$bottom;
+	left:$left;
+	right:$right;
+}
+
+@mixin transform($type,$val1,$val2,$rotation: false){
+  @if $rotation {
+    $val2:false;
+    transform: #{$type}($val1);
+    -webkit-transform: #{$type}($val1);
+    -moz-transform: #{$type}($val1);
+    -o-transform: #{$type}($val1);
+    -ms-transform: #{$type}($val1);
+  } @else {
+    transform: #{$type}($val1,$val2);
+    -webkit-transform: #{$type}($val1,$val2);
+    -moz-transform: #{$type}($val1,$val2);
+    -o-transform: #{$type}($val1,$val2);
+    -ms-transform: #{$type}($val1,$val2);
+  }
+}
+
+// placeholder
+@mixin placeholder {
+  &::-webkit-input-placeholder {@content}
+  &::-moz-placeholder {opacity: 1; @content}
+  &:-moz-placeholder {@content}
+  &:-ms-input-placeholder {@content}
+  &.placeholder {@content}
+}
+
+// full width
+%full-width {
+  padding-left: 9999px;
+  padding-right: 9999px;
+  margin-left: -9999px;
+  margin-right: -9999px;
+}
+
+@mixin fontface ($fontfamily, $filename) {
+	font-family: $filename;
+	src: url('../fonts/#{$filename}.eot');
+	src: url('../fonts/#{$filename}.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/#{$filename}.woff') format('woff'),
+		url('../fonts/#{$filename}.woff2') format('woff2'),
+		url('../fonts/#{$filename}.ttf') format('truetype'),
+		url('../fonts/#{$filename}.svg#{$filename}') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+// heading style
+@mixin heading-style{
+	margin: 0;
+	font-size: 24px;
+	line-height: 28px;
+	font-family: $nunito;
+	font-weight: 300;
+}
+
+// heading style 2
+@mixin heading-style-2{
+	font-size: 20px;
+	line-height: 24px;
+	letter-spacing:0;
+}
+
+// column count
+@mixin column-count($val) {
+	-webkit-column-count: $val;
+	-moz-column-count: $val; 
+	column-count: $val;
+}
+
+// column gap
+@mixin column-gap($val) {
+	-webkit-column-gap: $val;
+	-moz-column-gap: $val; 
+	column-gap: $val;
+}
+
+// transition
+@mixin transition ($type:all, $time:0.4s, $ease:ease) {
+	-moz-transition		 : $type $time $ease;
+	-webkit-transition	: $type $time $ease;
+	-o-transition			 : $type $time $ease;
+	transition					: $type $time $ease;
+}
+
+// vertical block
+@mixin vertical-block($cpseudo: after) {
+  white-space: nowrap;
+  &:#{$cpseudo}{
+    display:inline-block;
+    vertical-align: middle;
+    margin: 0 0 0 -5px;
+    min-height: 100%;
+    overflow: hidden;
+    width: 1px;
+    content: "";
+  }
+}
+
+// from http://codepen.io/MichaelArestad/pen/IxFGj 
+@mixin arrow-lazy($al-direction: top, $al-size: 10px, $al-color: #ccc, $al-center: 50%, $al-margin: -1px, $al-pseudo: before){
+	position: relative;
+	border-color: $al-color;
+
+	&:#{$al-pseudo} {
+		position: absolute;
+		content: "";
+		width: 0;
+		height: 0;
+		border-color: $al-color;
+
+		@if $al-direction == "right" {
+				top: $al-center;
+				left: 100%;
+				margin-left: $al-margin;
+				margin-top: $al-size * -1;
+				border-top: $al-size solid transparent;
+				border-bottom: $al-size solid transparent;
+				border-left: $al-size solid $al-color;
+				border-left-color: inherit;
+		} @else if $al-direction == "down" {
+				top: 100%;
+				left: $al-center;
+				margin-top: $al-margin;
+				margin-left: $al-size * -1;
+				border-left: $al-size solid transparent;
+				border-right: $al-size solid transparent;
+				border-top: $al-size solid $al-color;
+				border-top-color: inherit;
+		} @else if $al-direction == "left" {
+				top: $al-center;
+				right: 100%;
+				margin-right: $al-margin;
+				margin-top: $al-size * -1;
+				border-top: $al-size solid transparent;
+				border-bottom: $al-size solid transparent; 
+				border-right:$al-size solid $al-color;
+				border-right-color: inherit;
+		} @else {
+				bottom: 100%;
+				left: $al-center;
+				margin-bottom: $al-margin;
+				margin-left: $al-size * -1;
+				border-left: $al-size solid transparent;
+				border-right: $al-size solid transparent;
+				border-bottom: $al-size solid $al-color;
+				border-bottom-color: inherit;
+		}
+	}
+}
+
+// css3 filter
+@mixin filter($value){
+ filter: grayscale($value);
+ -webkit-filter: grayscale($value);
+ -moz-filter: grayscale($value) ;
+ -o-filter: grayscale($value);
+ -ms-filter: grayscale($value);
+}

@@ -1,0 +1,36 @@
+[
+  {
+    "featureType": "administrative",
+    "stylers": [
+      { "visibility": "off" }
+    ]
+  },{
+    "featureType": "landscape",
+    "stylers": [
+      { "saturation": -100 }
+    ]
+  },{
+    "featureType": "poi",
+    "stylers": [
+      { "visibility": "on" },
+      { "saturation": -100 }
+    ]
+  },{
+    "featureType": "road.highway",
+    "elementType": "geometry",
+    "stylers": [
+      { "color": "#f68933" }
+    ]
+  },{
+    "featureType": "transit",
+    "stylers": [
+      { "visibility": "off" }
+    ]
+  },{
+    "featureType": "water",
+    "stylers": [
+      { "visibility": "on" }
+    ]
+  },{
+  }
+]
